@@ -12,5 +12,5 @@ helm dep build dashboard-loader
 helm install dashboard-loader --name dashboard-loader --namespace monitoring
 ``` 
 
-Visiting http://<node-ip>:30910/ , you should find Grafana with the default dashboards and an additional 
+Visiting http://\<node-ip>:30910/ , you should find Grafana with the default dashboards and an additional 
 dashboard, which has been created from [example-dashboard.json](dashboard-loader/dashboards/example-dashboard.json)
