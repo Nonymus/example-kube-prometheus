@@ -14,3 +14,9 @@ helm install dashboard-loader --name dashboard-loader --namespace monitoring
 
 Visiting http://\<node-ip>:30910/ , you should find Grafana with the default dashboards and an additional 
 dashboard, which has been created from [example-dashboard.json](dashboard-loader/dashboards/example-dashboard.json)
+
+# Caveats
+## File Naming 
+To load dashboards from a file, its name must match the pattern `*-dashboard.json`. If you want to load datasources 
+from a file, it must match `*-datasource.json`. This is a limitation of the 
+[Grafana Watcher](https://github.com/coreos/prometheus-operator/tree/master/contrib/grafana-watcher). 
