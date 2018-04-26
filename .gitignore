@@ -1,0 +1,4 @@
+# IntelliJ
+/.idea/*
+# packaged helm charts
+*.tgz

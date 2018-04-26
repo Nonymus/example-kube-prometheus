@@ -1,0 +1,7 @@
+kube-prometheus:
+  grafana:
+    service:
+      type: NodePort
+      nodePort: 30910
+    serverDashboardConfigmaps:
+    - loader-dashboards

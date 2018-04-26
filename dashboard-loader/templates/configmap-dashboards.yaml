@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  labels:
+    app: {{ template "dashboard-loader.fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    heritage: "{{ .Release.Service }}"
+    release: "{{ .Release.Name }}"
+  name: loader-dashboards
+data:
+{{ (.Files.Glob "dashboards/*.json").AsConfig | indent 2}}

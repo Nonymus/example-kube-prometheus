@@ -1,0 +1,6 @@
+dependencies:
+- name: kube-prometheus
+  repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+  version: 0.0.48
+digest: sha256:6086573589fedf303507185703123df460819cdd472d63ab278fc1aa9c7cdc8d
+generated: 2018-04-26T10:34:00.977538185+02:00
